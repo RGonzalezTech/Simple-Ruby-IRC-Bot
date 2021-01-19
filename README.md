@@ -25,12 +25,15 @@ In order to log in to the Twitch.TV servers, you will need to provide your twitc
 You will also need to inform the bot which channels to listen in on. This is configured in the local `channels.txt` file.
 
 ```
-|___Simple-Ruby-IRC-Bot
-| |____run_bot.rb
-| |____channels.txt
-| |____greetings.txt
-| |____LICENSE
-| |____README.md
+.
+|____channels.txt
+|____greetings.txt
+|____lib
+| |____helpers.rb
+|____LICENSE
+|____README.md
+|____return_greetings.txt
+|____run_bot.rb
 ```
 
 **channels.txt**
@@ -40,11 +43,21 @@ You will also need to inform the bot which channels to listen in on. This is con
 #channel_three
 ```
 
+You can also customize the greeting phrases that the bot uses.
+
 **greetings.txt**
 ```
 Enjoy your stay!
 Thanks for joining!
 We're happy to have you!
 One of us... One of us... gooble gobble
+
+```
+
+**return_greetings.txt**
+```
+Thanks for coming back!
+Always glad to have you!
+Pleasure as always
 
 ```
