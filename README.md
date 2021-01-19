@@ -10,7 +10,41 @@ This bot also relies on the [cinch](https://github.com/cinchrb/cinch) gem.
 
 install it using:
 ```
-gem install cinch
+> gem install cinch
 ```
 
 It is the framework that we use to automate our IRC input/output.
+
+## Configuration
+In order to log in to the Twitch.TV servers, you will need to provide your twitch username and OAuth token.
+
+```
+> ruby run_bot.rb username oauth_token
+```
+
+You will also need to inform the bot which channels to listen in on. This is configured in the local `channels.txt` file.
+
+```
+|___Simple-Ruby-IRC-Bot
+| |____run_bot.rb
+| |____channels.txt
+| |____greetings.txt
+| |____LICENSE
+| |____README.md
+```
+
+**channels.txt**
+```
+#rgonzaleztechtips
+#channeltwo
+#channel_three
+```
+
+**greetings.txt**
+```
+Enjoy your stay!
+Thanks for joining!
+We're happy to have you!
+One of us... One of us... gooble gobble
+
+```
