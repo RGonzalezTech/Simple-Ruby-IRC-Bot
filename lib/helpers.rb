@@ -1,0 +1,18 @@
+def get_arg(idx)
+  input_arg = ARGV[idx]
+  if input_arg.nil?
+    raise "ERROR: Needs 2 Parameters. <username> <password>"
+  end
+
+  return input_arg
+end
+
+def read_config(file_path)
+  if File.exist?(file_path)
+    return File.readlines(file_path).map do |this_value|
+      this_value.strip
+    end
+  else
+    raise "ERROR: Missing file - #{file_path}"
+  end
+end
